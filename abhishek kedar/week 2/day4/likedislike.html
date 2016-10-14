@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+<script src="file.js">
+</script>
+<title>
+Like Dislike JSON practical
+</title>
+<style>
+#up {
+    width: 288px;
+    height: 300px;
+    background: url(tud.gif) 0 0;
+	cursor:pointer;
+	
+}
+
+#down {
+position:absolute;
+top:5;
+    width: 280px;
+    height: 300px;
+    background: url(tud.gif) -283px -65px ;
+	cursor:pointer;
+	
+}
+#ltext{
+
+       margin-top: 300px;
+    margin-left: -8px;
+     padding-left:114px;
+}
+#dtext{
+margin-top: 300px;
+    margin-left: -8px;
+   
+   padding-left:112px;
+}
+
+</style>
+</head>
+<body onload="load()">
+ <button  id="up"  onclick="countLike()">
+  <input id="ltext">
+ <button  id="down" onclick="countDislike()">
+  <input id="dtext">
+ 
+<br>
+<h2 id="result"></h2>
+<script src="file.js">
+</script>
+</body>
+</html>
+

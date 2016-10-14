@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+#t3:hover{
+color:blue;
+}
+</style>
+</head>
+<body>
+<fieldset>
+Press Key <input id="t1" type="text" onkeydown="countKey()">
+<br>
+<br>
+Key Count <input type="text" id="t2">
+</fieldset>
+<br>
+<br>
+<fieldset>
+<input id="t3" type="text" ondrag="changeColor()" >
+<br>
+<br>
+<input type="text" id="t4">
+</fieldset>
+<script>
+var count=0;
+function countKey()
+{
+count++;
+document.getElementById('t2').value=count;
+console.log(count);
+}
+
+function changeColor()
+{
+document.getElementById('t4').value="";
+document.getElementById('t4').style.color='red';
+}
+</script>
+</body>
+</html>

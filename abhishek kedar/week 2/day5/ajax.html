@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Ajax Practical</title>
+<style>
+#tAge{
+margin-left: 13px;
+}
+#addBtn{
+margin-left: 90px;
+}
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+</head>
+<body >
+
+<fieldset>
+<legend>Add Student Details</legend>
+Name:
+<input>
+<br>
+<br>
+Age:
+<input id="tAge">
+<br>
+<br>
+Gender:
+<input id="rMale" type="radio" checked>Male
+<input id="rFemale" type="radio">Female
+<br>
+<br>
+Joining Date:
+<input id="jDate" type="date" value="1947-08-15">
+<br>
+<br>
+<button id="addBtn" onclick="">Add Details</button>
+</fieldset>
+
+
+<br>
+<br>
+
+<fieldset>
+<legend><button id="viewBtn" onclick="loadDoc()">View Details</button></legend>
+
+<table id="demo">
+</table>
+</fieldset>
+
+<script src="ajax.js">
+</script>
+</body>
+</html>

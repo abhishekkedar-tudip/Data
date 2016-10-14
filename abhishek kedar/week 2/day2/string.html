@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Practical JavaScript
+</title>
+</head>
+<body>
+
+<fieldset>
+
+First Name
+<br>
+<input type="textbox"  id="tb1" autofocus>
+<button id="btn1" onclick=isEmpty(document.getElementById('tb1').value)>Check Name</button>
+<br>
+<br>
+Last Name
+<br>
+<input type="textbox"  id="tb2" >
+
+<button id="btn1" onclick=isEmpty(document.getElementById('tb2').value)>Check Name</button>
+<br>
+<p id="p1">
+</p>
+
+</fieldset>
+
+
+<script>
+var p;
+function isEmpty(txt)
+{
+	var str=txt.toString();
+ str.trim();
+console.log(txt);
+if(txt=="")
+{
+document.getElementById('p1').innerHTML='true';
+}
+else
+{
+document.getElementById('p1').innerHTML='false';
+}
+}
+</script>
+
+</body>
+</html>

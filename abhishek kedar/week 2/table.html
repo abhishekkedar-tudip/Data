@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Ajax Practical</title>
+<style>
+#tAge{
+margin-left: 13px;
+}
+#addBtn{
+margin-left: 90px;
+}
+#fs{display:none;}
+table,tr,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+  font-size:30px;
+}
+</style>
+</head>
+<body >
+
+<fieldset>
+<legend>Add Student Details</legend>
+Name:
+<input id="tname" required>
+<br>
+<br>
+Age:
+<input id="tage" type="number" required>
+<br>
+<br>
+
+<button id="subBtn"  onclick="sub()">Submit</button>
+<button id="resbtn" onclick="res()">Reset</button>
+</fieldset>
+<fieldset id="fs">
+<legend>Data</legend>
+<table id="tab">
+</table>
+</fieldset>
+
+<br>
+<br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="table.js">
+</script>
+</body>
+</html>
